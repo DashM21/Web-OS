@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  
+  <body style="background-color: azure; 
+  font-family: Trebuchet MS, sans-serif;
+  background-image: url(./3534560.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;">
+ 
+  <div style="position: absolute; top:0; left:0;
+  height: 50px; width: 100%; display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(50px);
+  background-color: rgba(227, 194, 232, 0.2);
+  padding-left: 20px; padding-right: 20px; padding-bottom: 5px; box-sizing: border-box;">
+
+    <p>DashM21</p>
+    <p style="font-size: 150%; font-weight: bold; position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); margin: 0%;">PeafowlOS</p>
+    <p id="time">09-09-2010 9:55 AM</p>
+
+
+  </div>
+
+  <div style="border: solid; 
+  background-color: azure;
+  height: 375px; width: 250px; 
+  padding: 20px; border-radius: 15px; 
+  position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); box-sizing:border-box;">
+
+  <img style="width: 75px; height: 75px; object-fit: cover; border-radius: 50%;" src="./Peacock.jpg" />
+ 
+  <h2>Peafowls</h2>
+
+  <p><strong>Peafowls</strong> is a common name for two bird species of the genus <strong>Pavo</strong>.
+    Male peafowl are referred to as peacocks, and female peafowl are referred to as peahens. </p>
+
+  <hr>
+
+  <br><a href="https://en.wikipedia.org/wiki/Peafowl">Source:Wikipedia</a>
+
+</div>
+
+
+
+<script>
+
+function update_time() {
+  var current_time = new Date().toLocaleString();
+  var time_text = document.querySelector("#time");
+  time_text.innerHTML = current_time
+  }
+setInterval(update_time, 1000);
+
+</script>
+
+</body>
+
+</html>
